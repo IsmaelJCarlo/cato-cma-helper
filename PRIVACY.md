@@ -6,10 +6,16 @@ Cato CMA Helper is a browser extension that provides opt-in productivity
 improvements for a user-configured Cato Management Application console. Its
 initial feature automatically closes repetitive page-help captions.
 
-## Data collection
+## Data handling and collection
 
-The extension does not collect, transmit, sell, or share personal information,
-browsing history, credentials, page content, analytics, or telemetry.
+To provide its user-facing feature, the extension locally examines website
+content on the user-approved Cato console origin only to identify and dismiss
+matching page-help captions. That website content is processed transiently in
+the browser and is not retained.
+
+The extension does not transmit, sell, or share personal information, browsing
+history, credentials, page content, analytics, or telemetry. The extension
+author does not receive or have access to website content or stored settings.
 
 ## Local processing
 
@@ -27,6 +33,12 @@ These settings are stored through the browser's synchronized extension-storage
 feature. Depending on the user's browser configuration, the browser vendor may
 synchronize these settings with the user's browser account under that vendor's
 own privacy terms. The extension author cannot access those synchronized values.
+
+## Limited use
+
+The extension uses website content and the configured console origin only to
+provide its disclosed caption-dismissal feature. This use complies with the
+Chrome Web Store User Data Policy, including its Limited Use requirements.
 
 ## Site access
 

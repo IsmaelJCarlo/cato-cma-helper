@@ -60,9 +60,12 @@ No. All executable code is included in the submitted Manifest V3 package.
 
 ## Data usage
 
-The extension does not collect, transmit, sell, or share user data. It makes no
-outbound network requests. The configured origin and enabled preference are the
-only stored values and are not accessible to the developer.
+Select **Website content**. The extension locally examines content on the
+user-approved Cato console origin only to identify and dismiss matching
+page-help captions. It does not retain or transmit that content, makes no
+outbound network requests, and does not transmit, sell, or share user data. The
+configured origin and enabled preference are the only stored values and are not
+accessible to the developer.
 
 ## Privacy policy URL
 
