@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cato Help Caption Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="options-page">
+    <main class="card">
+      <p class="eyebrow">Cato CMA helper</p>
+      <h1>Cato CMA Helper</h1>
+      <p class="intro">
+        Configure your Cato console and choose the productivity features you want
+        to enable. Access is requested only for the exact console origin you enter.
+      </p>
+
+      <form id="settings-form">
+        <label for="console-url">Cato console URL</label>
+        <input
+          id="console-url"
+          name="console-url"
+          type="url"
+          placeholder="https://your-account.cc.us1.catonetworks.com/"
+          autocomplete="url"
+          required
+        />
+
+        <fieldset>
+          <legend>Features</legend>
+          <label class="toggle-row" for="enabled">
+            <input id="enabled" type="checkbox" checked />
+            <span>Automatically dismiss page-help captions</span>
+          </label>
+        </fieldset>
+
+        <button class="primary" type="submit">Save settings</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="privacy">
+        No page content or credentials are collected or transmitted. Settings
+        remain in browser-synced extension storage.
+      </p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

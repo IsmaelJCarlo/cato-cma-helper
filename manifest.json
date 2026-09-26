@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Cato CMA Helper",
+  "short_name": "Cato CMA Helper",
+  "version": "1.0.0",
+  "description": "Adds configurable quality-of-life improvements to Cato CMA, including automatic dismissal of page-help captions.",
+  "homepage_url": "https://github.com/IsmaelJCarlo/cato-cma-helper",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "optional_host_permissions": [
+    "https://*.catonetworks.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Cato CMA Helper",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

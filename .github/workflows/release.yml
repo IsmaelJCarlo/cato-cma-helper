@@ -1,0 +1,31 @@
+name: Release extension package
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - name: Build extension ZIP
+        shell: bash
+        run: |
+          mkdir -p package/assets/icons
+          cp manifest.json background.js content.js options.html options.js popup.html popup.js styles.css package/
+          cp assets/icons/*.png package/assets/icons/
+          cd package
+          zip -r "../cato-cma-helper-${GITHUB_REF_NAME}.zip" .
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${GITHUB_REF_NAME}" "cato-cma-helper-${GITHUB_REF_NAME}.zip" --generate-notes --verify-tag
