@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Cato CMA Helper",
-  "short_name": "Cato CMA Helper",
-  "version": "1.0.0",
+  "short_name": "CMA Helper",
+  "version": "1.0.1",
   "description": "Adds configurable quality-of-life improvements to Cato CMA, including automatic dismissal of page-help captions.",
   "homepage_url": "https://github.com/IsmaelJCarlo/cato-cma-helper",
   "icons": {

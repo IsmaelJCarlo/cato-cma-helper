@@ -1,6 +1,6 @@
 {
   "name": "cato-cma-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "test": "node --check background.js && node --check content.js && node --check options.js && node --check popup.js && node scripts/validate.mjs"
