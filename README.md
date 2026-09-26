@@ -5,6 +5,8 @@ quality-of-life improvements to the Cato Management Application. Its first
 feature automatically closes repetitive page-help captions such as the “How it
 works” panel.
 
+![Cato CMA Helper settings](assets/screenshots/cato-cma-helper-settings-1280x800.png)
+
 The extension is not affiliated with or endorsed by Cato Networks. “Cato
 Networks” and related marks belong to their respective owners.
 
@@ -45,9 +47,10 @@ certification, use the unpacked development installation below.
 ## Privacy and permissions
 
 The options page requests access only to the exact Cato console origin entered
-by the user. The extension does not make network requests or collect page data,
-credentials, or analytics. Configuration is stored using browser-synced
-extension storage.
+by the user. The extension locally examines page content only to find matching
+help captions. It does not retain or transmit page content, make outbound
+network requests, or collect credentials or analytics. Configuration is stored
+using browser-synced extension storage.
 
 See the full [privacy policy](PRIVACY.md).
 

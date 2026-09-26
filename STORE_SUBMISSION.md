@@ -98,6 +98,8 @@ an account.
 
 - Logo: `store-assets/store-logo-300.png` (300 × 300 PNG)
 - Source logo: `store-assets/logo-source.png`
+- Screenshot: `assets/screenshots/cato-cma-helper-settings-1280x800.png`
+  (1280 × 800 PNG; uses a placeholder console URL and contains no tenant data)
 
 Partner Center also requests screenshots. Capture screenshots only from a test
 tenant or a carefully redacted page; do not upload images containing customer,

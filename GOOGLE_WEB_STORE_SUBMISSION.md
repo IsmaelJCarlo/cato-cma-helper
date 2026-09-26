@@ -148,14 +148,18 @@ reviewed without an account.
 
 - Store icon: `assets/icons/icon-128.png` (128 x 128 PNG)
 - Alternate high-resolution logo: `store-assets/store-logo-300.png`
-- Screenshots: at least one is required; use 1280 x 800 or 640 x 400 PNG/JPEG.
+- Primary screenshot: `assets/screenshots/cato-cma-helper-settings-1280x800.png`
+  (1280 x 800 PNG; reviewed for public use).
+- Source screenshot: `assets/screenshots/cato-cma-helper-settings-source.png`
+  (1334 x 1160 PNG; preserve as the uncropped source, not for direct upload).
 - Small promotional tile: 440 x 280 PNG/JPEG if requested by the dashboard.
 - Marquee promotional image: 1400 x 560 PNG/JPEG; optional under Google's
   current listing guidance.
 
-Capture screenshots only from a test tenant or a carefully redacted page. Do
-not upload images containing customer names, usernames, events, IP addresses,
-account identifiers, or other tenant data.
+The primary screenshot uses the placeholder
+`https://your-company.cc.us1.catonetworks.com/` and contains no customer name,
+username, event, IP address, account identifier, or tenant-specific data. Apply
+the same review standard to any future screenshot.
 
 ## Pre-submission checks
 
